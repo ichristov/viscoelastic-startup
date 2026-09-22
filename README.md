@@ -8,7 +8,7 @@ Over the last two decades, dozens of (sometimes) highly cited papers have presen
 
 Although these Comments definitively settled the mathematics and solutions over a decade ago, the same errors continue to pop up and be promulgated. In this area of mechanics, everything is demonstrably true or false; there are no gray areas. So, rather than ask the reader to take my word for it, **each notebook in this repository reproduces one of those corrections from scratch**: the corrected solution, the erroneous published solution implemented exactly as printed, an independent check of both (a numerical inversion of the Laplace transform and a finite-difference solution), and the paper's comparison figure(s), regenerated.
 
-🚀 Getting started: the notebooks are independent of each other; [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea.
+🚀 Getting started: the notebooks are independent of each other; [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea. From there, the two [christov_2010_stokes1_*](notebooks/christov_2010_stokes1_second_grade.ipynb) notebooks collect the correct solutions against which all the erroneous ones are checked, while [jordan_2005_second_grade_couette](notebooks/jordan_2005_second_grade_couette.ipynb) and [christov_2013_oldroydb_couette](notebooks/christov_2013_oldroydb_couette.ipynb) show the same mistake reached by a different route: an eigenfunction expansion in a channel, rather than an integral transform in a half-space.
 
 | Notebook | Problem | Reproduces |
 |---|---|---|
