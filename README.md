@@ -2,11 +2,13 @@
 
 ![Left: the velocity of a plate started impulsively, a unit step, and the ramp 1 - exp(-t/t_r) that the erroneous solutions actually describe. Right: velocity profiles of a second-grade fluid above the plate at three times, the correct solution in blue with arrows and the erroneous one as a vermillion dashed curve lagging behind it](assets/cover.png)
 
-This is a GitHub repository for the verification and reproducibility of exact solutions for **start-up flows of viscoelastic fluids**, maintained by Prof. [Ivan C. Christov](https://christov.tmnt-lab.org). A plate, at rest for all $t < 0$, is suddenly set into motion at $t = 0^+$ and drags a second-grade, Oldroyd-B, or Jeffreys fluid along with it: Stokes' first and second problems, and the start-up of plane Couette flow.
+This is a GitHub repository for the verification and reproducibility of exact solutions for **start-up flows of viscoelastic fluids**, maintained by Prof. [Ivan C. Christov](https://christov.tmnt-lab.org). A plate, at rest for all $t < 0$, is suddenly set into motion at $t = 0^+$ and drags a [viscoelastic](https://en.wikipedia.org/wiki/Viscoelasticity) fluid (modeled, for example, by the so-called second-grade, [Oldroyd-B](https://en.wikipedia.org/wiki/Oldroyd-B_model), or even Gordon&ndash;Schowalter models) along with it. Variants include [Stokes' first and second problems](https://en.wikipedia.org/wiki/Stokes_problem) on an unbounded domain, and the start-up of plane [Couette flow](https://en.wikipedia.org/wiki/Couette_flow) in a channel. Other variations are possible.
 
-Over the last two decades, dozens of (apparently) highly cited papers have presented "new exact solutions" to these classical problems that are, generally speaking, incorrect. The mathematical error is elementary, and it is the same one each time. Together with C. I. Christov and P. M. Jordan, I have been correcting these papers, one Comment at a time, in a project I call _On Stokes' problems: a study in repetitive errors in the fluid mechanics literature_. Although these Comments definitively settled the solutions years ago, the same errors continue to be duplicated and promulgated. In this area of mechanics, everything is demonstrably true or false by the rules of mathematics using deductive logic, and there are no gray areas. So, rather than ask the reader to take my word for it, **each notebook here reproduces one of those Comments from scratch**: the corrected solution, the erroneous published solution implemented exactly as printed, an independent check of both (a numerical inversion of the Laplace transform and a finite-difference solution), and the paper's comparison figure, regenerated.
+Over the last two decades, dozens of (sometimes) highly cited papers have presented "new exact solutions" to these classical problems that are, generally speaking, incorrect. The mathematical error is elementary, and it is the same one each time. Together with C. I. Christov and P. M. Jordan, I have been correcting these papers, one Comment at a time, in a project I loosely call _On Stokes' problems: a study in repetitive errors in the fluid mechanics literature_. This is the open-source GitHub version of the project.
 
-🚀 Getting started (the notebooks are independent of each other; [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea):
+Although these Comments definitively settled the mathematics and solutions over a decade ago, the same errors continue to pop up and be promulgated. In this area of mechanics, everything is demonstrably true or false by the rules of mathematics using deductive logic, and there are no gray areas. So, rather than ask the reader to take my word for it, **each notebook in this repository reproduces one of those Comments from scratch**: the corrected solution, the erroneous published solution implemented exactly as printed, an independent check of both (a numerical inversion of the Laplace transform and a finite-difference solution), and the paper's comparison figure(s), regenerated.
+
+🚀 Getting started: the notebooks are independent of each other; [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea.
 
 | Notebook | Problem | Reproduces |
 |---|---|---|
@@ -22,9 +24,9 @@ Over the last two decades, dozens of (apparently) highly cited papers have prese
 
 ## One mistake, many papers
 
-The velocity of a plate suddenly set into motion at $t = 0^+$ is $\widetilde U(t)H(t)$, where $H$ is the Heaviside unit step function. In the sense of distributions, its derivative contains $\widetilde U(0)\delta(t)$. The Dirac-$\delta$ distribution has no point values; however, when it is the forcing term of an ODE in $t$, it contributes to the solution. **Every erroneous solution reproduced here loses that $\delta(t)$**: it is treated as identically zero when the Fourier sine transform meets a mixed derivative, or it is hidden in an initial condition when the steady state is "subtracted off" before an eigenfunction expansion.
+The velocity of a plate suddenly set into motion at $t = 0^+$ is $\widetilde U(t)H(t)$, where $H$ is the [Heaviside unit step function](https://en.wikipedia.org/wiki/Heaviside_step_function). In the sense of [distributions](https://en.wikipedia.org/wiki/Distribution_(mathematics)), its derivative contains $\widetilde U(0)\delta(t)$. The [Dirac delta distribution](https://en.wikipedia.org/wiki/Dirac_delta_function), $\delta(t)$, has no point values; however, when it is the forcing term of an ODE in $t$, it contributes to the solution. (Prof. Arthur Mattuck's outstanding MIT 18.03 video lectures on [discontinuous inputs](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/resources/lecture-22-using-laplace-transform-to-solve-odes-with-discontinuous-inputs/) and [impulse inputs](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/resources/lecture-23-use-with-impulse-inputs/) explain this beautifully.) **Every erroneous solution reproduced here loses that $\delta(t)$**: it is treated as identically zero when the [Fourier sine transform](https://en.wikipedia.org/wiki/Sine_and_cosine_transforms) meets a mixed derivative, or it is hidden in an initial condition when the steady state is "subtracted off" before an [eigenfunction expansion](https://en.wikipedia.org/wiki/Separation_of_variables). The [Laplace transform](https://en.wikipedia.org/wiki/Laplace_transform) in time, applied to the problem as posed, cannot make this mistake.
 
-What is lost has a clean physical meaning. For a fluid with a retardation time $t_r$ (second-grade, Oldroyd-B, Jeffreys), the erroneous solution is the _exact_ solution for a different plate, one whose start-up jump is ramped on the retardation time:
+What is lost has a clean physical meaning. For a fluid with a retardation time $t_r$ (second-grade, Oldroyd-B), the erroneous solution is the _exact_ solution for a different plate, one whose start-up jump is ramped on the retardation time:
 $$
 u(0,t) = \left[\widetilde U(t) - \widetilde U(0)\,\mathrm{e}^{-t/t_r}\right]H(t).
 $$
@@ -43,9 +45,18 @@ python3 -m pip install -r requirements.txt     # or: conda env create -f environ
 jupyter lab notebooks/
 ```
 
-Each notebook runs top to bottom on a fresh kernel and regenerates every number and figure it shows; there are no data files. On a laptop, each takes under two minutes, except [balan_2023_startup_couette](notebooks/balan_2023_startup_couette.ipynb), about three, which computes its exact solutions by Duhamel integrals and refines a grid up to 3200 cells. The notebooks are committed executed, so they can also be read on GitHub without running them, with a static plot in place of each interactive one. The regenerated paper figures are also in [`figures/`](figures/).
+Each notebook runs top to bottom on a fresh kernel and regenerates every number and figure it shows; there are no data files. On a laptop, each takes up to three minutes. The notebooks are committed executed, so they can also be read on GitHub without running them, with a static plot in place of each interactive one. The regenerated paper figures are also in [`figures/`](figures/).
 
 ⚠️ The notebooks are unlikely to be robust and may require updates to run on different platforms, and as underlying Python libraries evolve.
+
+💡 To run a notebook as a standalone Python script (stripping all the Markdown commentary), convert it in your terminal, for example:
+
+```bash
+jupyter nbconvert notebooks/christov_christov_2010_second_grade.ipynb --to python --PythonExporter.exclude_markdown=True
+ipython notebooks/christov_christov_2010_second_grade.py
+```
+
+Run the script with `ipython`, not `python`, because the notebooks use IPython "magic" commands such as `%matplotlib inline`.
 
 ## Reading a notebook
 
