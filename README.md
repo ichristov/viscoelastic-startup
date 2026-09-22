@@ -68,6 +68,7 @@ Run the script with `ipython`, not `python`, because the notebooks use IPython "
 - **Misprints in the Comments themselves are corrected in place, with a note** saying what was printed and why it is corrected.
 - **Every claim is checked twice**, against a numerical inversion of the Laplace transform ([de Hoog _et al._, 1982](https://doi.org/10.1137/0903022), via [mpmath](https://mpmath.org)) and against a finite-difference scheme, with convergence tables.
 - **Anything a notebook shows that its paper does not state** (the ramped-plate identifications) is marked "shown here".
+- **Each notebook keeps its paper's notation**, so the unit step function is $H(t)$ in some of them and $\theta(t)$ in others.
 
 ## Citing
 
