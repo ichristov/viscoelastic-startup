@@ -1,2 +1,2 @@
 # viscoelastic-startup
-Verification and reproducibility of exact solutions for start-up flows of viscoelastic fluids
+Verification and reproducibility of unidirectional solutions for start-up flows of viscoelastic fluids
