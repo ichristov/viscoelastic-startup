@@ -97,7 +97,7 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 
 George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
 
-Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Truesdell wrote:
+Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, [C. Truesdell](https://en.wikipedia.org/wiki/Clifford_Truesdell) wrote:
 
 > This paper, whose intent is stated in its title, gives wrong solutions to trivial problems. The basic error, however, is not new: &hellip; the stress-strain relations used are those once proposed by St.-Venant &hellip;, whose incorrect confusion of coordinates in the deformed and undeformed states of the body was pointed out by Brill and Boussinesq &hellip;
 >
