@@ -24,8 +24,10 @@ with a neighboring curve, and of the right color.
   $\kappa = 1$ and $0.4$ from the first and $\kappa = 0.2$ from the second, and writes
   [`balan_fig4a_digitized.csv`](balan_fig4a_digitized.csv). Each panel is calibrated separately, because the
   three panels of Fig. 4(a) were pasted at slightly different scales (2 per cent in $v$, 7 per cent in $t$).
-- `digitize_balan_fig3a_fig2.py` reads $v(\xi, t)$ from Fig. 3(a) at the six distances from the plate, and the
-  Newtonian velocity profiles of Fig. 2, and compares both with the exact solutions.
+- `digitize_balan_fig3a_fig2.py` reads $v(\xi, t)$ from the velocity panel of Fig. 3(a) at the six distances
+  from the plate, $\sigma(\xi, t)$ from its shear-stress panel, and the Newtonian velocity profiles of
+  Fig. 2, and compares all three with the exact solutions. The 35 stress values it recovers differ from the
+  exact ramped plate by a median of $3\times10^{-4}$ and from the consistent start-up by up to 0.036.
 
 What the readings show is in the notebook: the values of Fig. 3(a) and of the $\kappa = 0.4$ panel of Fig. 4(a)
 follow the exact ramped-plate solution rather than the start-up solution, while the $\kappa = 0.2$ panel of

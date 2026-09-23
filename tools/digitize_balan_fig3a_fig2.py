@@ -85,6 +85,43 @@ diff = np.array([[r[2] - r[3], r[2] - r[4]] for r in rows])
 print(f'  {len(rows)} values; max|read - ramp| = {np.abs(diff[:, 0]).max():.4f}, median {np.median(np.abs(diff[:, 0])):.4f}; '
       f'read - start-up from {diff[:, 1].min():.4f} to {diff[:, 1].max():.4f}')
 
+# ---------------------------------------------------------------- Fig. 3(a), shear-stress panel, page 4
+# the right half of the same figure, same six distances and the same colors; no annotation circle here
+fig3a_sigma = np.asarray(page(4).crop((2600, 2350, 4400, 3450))).astype(float)
+ts_slope, ts_intercept = 0.00636622050772, -0.581398760882          # tick labels 2, 4, ..., 10 (max residual 0.019)
+ss_slope, ss_intercept = -0.000644527436555, 0.646755760866         # tick labels 0.1, ..., 0.5 (max residual 1e-3)
+
+
+def exact_sigma(xi, t, kappa, ramp):
+    """sigma at a distance xi from the plate: the inverse of [(1 + kappa s)/(1 + s)] k exp(-k xi)/s, Re = 1."""
+    def F(s):
+        k = mp.sqrt(s*(1 + s)/(1 + kappa*s))
+        value = (1 + kappa*s)/(1 + s)*k*mp.exp(-k*xi)/s
+        return value/(1 + kappa*s) if ramp else value
+    return float(mp.invertlaplace(F, t, method='dehoog'))
+
+
+print('\nFIG. 3(a) OF BALAN (2023), SHEAR STRESS, kappa = 0.2: read, ramped plate, start-up')
+rows = []
+for t in range(1, 10):
+    seen = {}
+    for r, h, c in clusters(fig3a_sigma, int(round((t - ts_intercept)/ts_slope)), 40, 1000):
+        d = {k: np.linalg.norm(c - np.array(v)) for k, v in colors.items() if k not in ('extra', 'circle')}
+        k = min(d, key=d.get)
+        if d[k] > 70 or h > 25:          # an ambiguous color, or two curves merged into one cluster
+            continue
+        seen[k] = None if k in seen else ss_slope*r + ss_intercept
+    for xi, sigma in sorted(seen.items()):
+        if sigma is not None and sigma > 0.01:
+            rows.append((xi, t, sigma, exact_sigma(xi, t, 0.2, True), exact_sigma(xi, t, 0.2, False)))
+rows.sort()
+for xi, t, sigma, ramp, step in rows:
+    print(f'  xi = {xi:3}, t = {t}: {sigma:.4f}  {ramp:.4f} ({sigma - ramp:+.4f})  {step:.4f} ({sigma - step:+.4f})')
+diff = np.array([[r[2] - r[3], r[2] - r[4]] for r in rows])
+print(f'  {len(rows)} values; max|read - ramp| = {np.abs(diff[:, 0]).max():.4f}, '
+      f'median {np.median(np.abs(diff[:, 0])):.4f}; '
+      f'|read - start-up| up to {np.abs(diff[:, 1]).max():.4f}')
+
 # ---------------------------------------------------------------- Fig. 2, Newtonian velocity inset, page 3
 s = 600/110
 fig2 = np.asarray(page(3).crop((int(95*s), int(770*s), int(470*s), int(1030*s)))).astype(float)
