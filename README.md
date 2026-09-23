@@ -90,6 +90,8 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 8. P. M. Jordan, [Comments on: &ldquo;Exact solution of Stokes' first problem for heated generalized Burgers' fluid in a porous half-space&rdquo;](https://doi.org/10.1016/j.nonrwa.2009.01.010) [Nonlinear Anal. RWA 9 (2008) 1628], _Nonlinear Anal. RWA_ **11** (2010) 1198&ndash;1200.
 9. C. Balan, [Note on the start-up of Couette flow for viscoelastic fluids](https://doi.org/10.1063/5.0173510), _Phys. Fluids_ **35** (2023) 113108; the notebook reproduces its start-up computations and my submitted Comment on it.
 
+## Repetitive errors, near and far
+
 📝 Three more Comments in the same series are not (yet) reproduced here:
 
 - I. C. Christov, [Comment on &ldquo;The velocity field due to an oscillating plate in an Oldroyd-B fluid&rdquo;](https://doi.org/10.1139/cjp-2015-0374) by C. C. Hopkins and J. R. de Bruyn [Can. J. Phys. 92, 533 (2014)], _Can. J. Phys._ **93** (2015) 1651&ndash;1652.
@@ -106,7 +108,7 @@ Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Trues
 
 On Truesdell himself: J. M. Ball, R. D. James, [The scientific life and influence of Clifford Ambrose Truesdell III](https://doi.org/10.1007/s002050100178), _Arch. Rational Mech. Anal._ **161** (2002) 1&ndash;26. [Free copy](https://people.maths.ox.ac.uk/ball/Miscelleaneous%20Articles/truesdell.pdf)
 
-Nor is it confined to viscoelasticity, or to me. Corrections of the same kind are written in neighboring fields, and catalogues of the genre exist:
+🔁 Nor is it confined to viscoelasticity, or to me. Corrections of the same kind are written in neighboring fields, and catalogues of the genre exist:
 
 - E. Pucci, G. Saccomandi, R. Vitolo, [Bogus transformations in mechanics of continua](https://doi.org/10.1016/j.ijengsci.2015.10.009), _Int. J. Eng. Sci._ **99** (2016) 13&ndash;21.
 - G. Romano, [Comment on the paper &ldquo;Exact solution of Eringen's nonlocal integral model for bending of Euler&ndash;Bernoulli and Timoshenko beams&rdquo; by Meral Tuna &amp; Mesut Kirca](https://doi.org/10.1016/j.ijengsci.2016.09.009), _Int. J. Eng. Sci._ **109** (2016) 240&ndash;242.
