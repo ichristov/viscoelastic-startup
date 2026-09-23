@@ -113,6 +113,8 @@ Nor is it confined to viscoelasticity, or to me. The same corrections are being 
 - G. Romano, [Comment on the paper &ldquo;Exact solution of Eringen's nonlocal integral model for bending of Euler&ndash;Bernoulli and Timoshenko beams&rdquo; by Meral Tuna &amp; Mesut Kirca](https://doi.org/10.1016/j.ijengsci.2016.09.009), _Int. J. Eng. Sci._ **109** (2016) 240&ndash;242.
 - G. Natarajan, M. Natarajan, [Critique on &ldquo;A revisit of Navier&ndash;Stokes equation&rdquo;](https://doi.org/10.1016/j.euromechflu.2020.08.002), _Eur. J. Mech. B/Fluids_ **85** (2021) 21&ndash;23.
 
+Whole catalogues of the genre exist: N. A. Kudryashov, [Seven common errors in finding exact solutions of nonlinear differential equations](https://doi.org/10.1016/j.cnsns.2009.01.023), _Commun. Nonlinear Sci. Numer. Simul._ **14** (2009) 3507&ndash;3529, continued by R. O. Popovych, O. O. Vaneeva, [More common errors in finding exact solutions of nonlinear differential equations: Part I](https://doi.org/10.1016/j.cnsns.2010.01.037), _ibid._ **15** (2010) 3887&ndash;3899. In quantum chemistry, F. M. Fern&aacute;ndez has published dozens of such Comments, for instance [Comment on &ldquo;Semi-exact solutions of sextic potential plus a centrifugal term&rdquo;](https://doi.org/10.1007/s10910-023-01458-8), _J. Math. Chem._ **61** (2023) 893&ndash;895.
+
 Why such errors persist, and why mathematics corrects them more slowly than other fields, is itself a subject: J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425.
 
 ## AI use
