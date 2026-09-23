@@ -90,7 +90,12 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 8. P. M. Jordan, [Comments on: &ldquo;Exact solution of Stokes' first problem for heated generalized Burgers' fluid in a porous half-space&rdquo;](https://doi.org/10.1016/j.nonrwa.2009.01.010) [Nonlinear Anal. RWA 9 (2008) 1628], _Nonlinear Anal. RWA_ **11** (2010) 1198&ndash;1200.
 9. C. Balan, [Note on the start-up of Couette flow for viscoelastic fluids](https://doi.org/10.1063/5.0173510), _Phys. Fluids_ **35** (2023) 113108; the notebook reproduces its start-up computations and my submitted Comment on it.
 
-📝 Two more Comments in the same series are not (yet) reproduced here: I. C. Christov, [Comment on &ldquo;The velocity field due to an oscillating plate in an Oldroyd-B fluid&rdquo;](https://doi.org/10.1139/cjp-2015-0374) by C. C. Hopkins and J. R. de Bruyn [Can. J. Phys. 92, 533 (2014)], _Can. J. Phys._ **93** (2015) 1651&ndash;1652, and I. C. Christov, [Comment on: &ldquo;Stokes' first problem for heated flat plate with Atangana&ndash;Baleanu fractional derivative&rdquo;](https://doi.org/10.1016/j.chaos.2021.110999) [Chaos Solitons Fractals 117 (2018) 68], _Chaos Solitons Fractals_ **147** (2021) 110999. The latter shows that a 2018 paper commits the mathematical mistake already identified and corrected in [[3]](#citing). George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
+📝 Two more Comments in the same series are not (yet) reproduced here:
+
+- I. C. Christov, [Comment on &ldquo;The velocity field due to an oscillating plate in an Oldroyd-B fluid&rdquo;](https://doi.org/10.1139/cjp-2015-0374) by C. C. Hopkins and J. R. de Bruyn [Can. J. Phys. 92, 533 (2014)], _Can. J. Phys._ **93** (2015) 1651&ndash;1652.
+- I. C. Christov, [Comment on: &ldquo;Stokes' first problem for heated flat plate with Atangana&ndash;Baleanu fractional derivative&rdquo;](https://doi.org/10.1016/j.chaos.2021.110999) [Chaos Solitons Fractals 117 (2018) 68], _Chaos Solitons Fractals_ **147** (2021) 110999. It shows that a 2018 paper commits the mathematical mistake already identified and corrected in [[3]](#citing).
+
+George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
 
 ## AI use
 
