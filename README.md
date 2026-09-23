@@ -106,16 +106,14 @@ Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Trues
 
 On Truesdell himself: J. M. Ball, R. D. James, [The scientific life and influence of Clifford Ambrose Truesdell III](https://doi.org/10.1007/s002050100178), _Arch. Rational Mech. Anal._ **161** (2002) 1&ndash;26. [Free copy](https://people.maths.ox.ac.uk/ball/Miscelleaneous%20Articles/truesdell.pdf)
 
-Nor is it confined to viscoelasticity, or to me. The same corrections are being written in neighboring fields, and could be reproduced in the same way as the notebooks here:
+Nor is it confined to viscoelasticity, or to me. Corrections of the same kind are written in neighboring fields, and catalogues of the genre exist:
 
-- I. A. Frigaard, R. J. Poole, [Comment on &ldquo;Bejan's flow visualization of buoyancy-driven flow of a hydromagnetic Casson fluid from an isothermal wavy surface&rdquo;](https://doi.org/10.1063/5.0075898) [Phys. Fluids 33, 093113 (2021)], _Phys. Fluids_ **33** (2021) 129101.
 - E. Pucci, G. Saccomandi, R. Vitolo, [Bogus transformations in mechanics of continua](https://doi.org/10.1016/j.ijengsci.2015.10.009), _Int. J. Eng. Sci._ **99** (2016) 13&ndash;21.
 - G. Romano, [Comment on the paper &ldquo;Exact solution of Eringen's nonlocal integral model for bending of Euler&ndash;Bernoulli and Timoshenko beams&rdquo; by Meral Tuna &amp; Mesut Kirca](https://doi.org/10.1016/j.ijengsci.2016.09.009), _Int. J. Eng. Sci._ **109** (2016) 240&ndash;242.
-- G. Natarajan, M. Natarajan, [Critique on &ldquo;A revisit of Navier&ndash;Stokes equation&rdquo;](https://doi.org/10.1016/j.euromechflu.2020.08.002), _Eur. J. Mech. B/Fluids_ **85** (2021) 21&ndash;23.
-
-Whole catalogues of the genre exist: N. A. Kudryashov, [Seven common errors in finding exact solutions of nonlinear differential equations](https://doi.org/10.1016/j.cnsns.2009.01.023), _Commun. Nonlinear Sci. Numer. Simul._ **14** (2009) 3507&ndash;3529, continued by R. O. Popovych, O. O. Vaneeva, [More common errors in finding exact solutions of nonlinear differential equations: Part I](https://doi.org/10.1016/j.cnsns.2010.01.037), _ibid._ **15** (2010) 3887&ndash;3899. In quantum chemistry, F. M. Fern&aacute;ndez has published dozens of such Comments, for instance [Comment on &ldquo;Semi-exact solutions of sextic potential plus a centrifugal term&rdquo;](https://doi.org/10.1007/s10910-023-01458-8), _J. Math. Chem._ **61** (2023) 893&ndash;895.
-
-Why such errors persist, and why mathematics corrects them more slowly than other fields, is itself a subject: J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425.
+- P. M. Jordan, N. Valdivia, [Comment on &ldquo;On some geometrical aspects of the potential structure of the equations of evolution: The case of Navier&ndash;Stokes&rdquo;](https://doi.org/10.1209/0295-5075/ae7754), _Europhys. Lett._ **155** (2026) 33003.
+- N. A. Kudryashov, [Seven common errors in finding exact solutions of nonlinear differential equations](https://doi.org/10.1016/j.cnsns.2009.01.023), _Commun. Nonlinear Sci. Numer. Simul._ **14** (2009) 3507&ndash;3529, continued by R. O. Popovych, O. O. Vaneeva, [More common errors in finding exact solutions of nonlinear differential equations: Part I](https://doi.org/10.1016/j.cnsns.2010.01.037), _ibid._ **15** (2010) 3887&ndash;3899.
+- F. M. Fern&aacute;ndez has published dozens of such Comments, on methods as well as on solutions: [Comment on &ldquo;The asymptotic iteration method revisited&rdquo;](https://doi.org/10.1063/5.0008333), _J. Math. Phys._ **61** (2020) 064101, and [Comment on &ldquo;Semi-exact solutions of sextic potential plus a centrifugal term&rdquo;](https://doi.org/10.1007/s10910-023-01458-8), _J. Math. Chem._ **61** (2023) 893&ndash;895.
+- J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425, on why mathematics corrects its errors more slowly than other fields.
 
 ## AI use
 
