@@ -113,7 +113,8 @@ Nor is it confined to viscoelasticity, or to me. Corrections of the same kind ar
 - P. M. Jordan, N. Valdivia, [Comment on &ldquo;On some geometrical aspects of the potential structure of the equations of evolution: The case of Navier&ndash;Stokes&rdquo;](https://doi.org/10.1209/0295-5075/ae7754), _Europhys. Lett._ **155** (2026) 33003.
 - N. A. Kudryashov, [Seven common errors in finding exact solutions of nonlinear differential equations](https://doi.org/10.1016/j.cnsns.2009.01.023), _Commun. Nonlinear Sci. Numer. Simul._ **14** (2009) 3507&ndash;3529, continued by R. O. Popovych, O. O. Vaneeva, [More common errors in finding exact solutions of nonlinear differential equations: Part I](https://doi.org/10.1016/j.cnsns.2010.01.037), _ibid._ **15** (2010) 3887&ndash;3899.
 - F. M. Fern&aacute;ndez has published dozens of such Comments, on methods as well as on solutions: [Comment on &ldquo;The asymptotic iteration method revisited&rdquo;](https://doi.org/10.1063/5.0008333), _J. Math. Phys._ **61** (2020) 064101, and [Comment on &ldquo;Semi-exact solutions of sextic potential plus a centrifugal term&rdquo;](https://doi.org/10.1007/s10910-023-01458-8), _J. Math. Chem._ **61** (2023) 893&ndash;895.
-- J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425, on why mathematics corrects its errors more slowly than other fields.
+
+Why such errors persist, and why mathematics corrects them more slowly than other fields, is itself a subject: J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425.
 
 ## AI use
 
