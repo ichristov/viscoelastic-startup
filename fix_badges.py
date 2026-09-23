@@ -3,6 +3,7 @@
 
 import json
 import subprocess
+import uuid
 from pathlib import Path
 
 
@@ -68,14 +69,20 @@ def main():
             "metadata": {},
             "source": [f"[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({url})\n"]
         }
+        # nbformat 4.5 and later require an id on every cell
+        if data.get('nbformat_minor', 0) >= 5:
+            badge['id'] = uuid.uuid4().hex[:8]
 
         cells = data.get('cells', [])
         if cells and 'colab-badge' in str(cells[0]):
+            if 'id' in cells[0] and 'id' in badge:
+                badge['id'] = cells[0]['id']   # keep the id of the cell being replaced
             cells[0] = badge
         else:
             cells.insert(0, badge)
 
-        nb.write_text(json.dumps(data, indent=1) + '\n')
+        # ensure_ascii=False, so that the non-ASCII characters of the stored outputs are not escaped
+        nb.write_text(json.dumps(data, indent=1, ensure_ascii=False) + '\n')
         print(f"  ✓ {'Updated' if has else 'Added'}\n")
         done += 1
 
