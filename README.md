@@ -97,11 +97,13 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 
 George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
 
-Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, [C. Truesdell](https://people.maths.ox.ac.uk/ball/Miscelleaneous%20Articles/truesdell.pdf) wrote:
+Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Truesdell wrote:
 
 > This paper, whose intent is stated in its title, gives wrong solutions to trivial problems. The basic error, however, is not new: &hellip; the stress-strain relations used are those once proposed by St.-Venant &hellip;, whose incorrect confusion of coordinates in the deformed and undeformed states of the body was pointed out by Brill and Boussinesq &hellip;
 >
 > &mdash; C. Truesdell, review of G. Garc&iacute;a, _Equations of finite vibratory motions in isotropic elastic media_, _Actas Acad. Ci. Lima_ **13** (1950) 29&ndash;38, [MR0039515 (12,561a)](https://mathscinet.ams.org/mathscinet-getitem?mr=0039515)
+
+On Truesdell himself: J. M. Ball, R. D. James, [The scientific life and influence of Clifford Ambrose Truesdell III](https://doi.org/10.1007/s002050100178), _Arch. Rational Mech. Anal._ **161** (2002) 1&ndash;26. [Free copy](https://people.maths.ox.ac.uk/ball/Miscelleaneous%20Articles/truesdell.pdf)
 
 ## AI use
 
