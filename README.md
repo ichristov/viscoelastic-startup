@@ -95,15 +95,6 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 - I. C. Christov, [Comment on &ldquo;The velocity field due to an oscillating plate in an Oldroyd-B fluid&rdquo;](https://doi.org/10.1139/cjp-2015-0374) by C. C. Hopkins and J. R. de Bruyn [Can. J. Phys. 92, 533 (2014)], _Can. J. Phys._ **93** (2015) 1651&ndash;1652.
 - I. C. Christov, [Comment on: &ldquo;Stokes' first problem for heated flat plate with Atangana&ndash;Baleanu fractional derivative&rdquo;](https://doi.org/10.1016/j.chaos.2021.110999) [Chaos Solitons Fractals 117 (2018) 68], _Chaos Solitons Fractals_ **147** (2021) 110999. It shows that a 2018 paper commits the mathematical mistake already identified and corrected in [[3]](#citing).
 
-The genre is neither mine nor viscoelasticity's. The same corrections are being written in neighboring fields, and could be reproduced in the same way as the notebooks here:
-
-- I. A. Frigaard, R. J. Poole, [Comment on &ldquo;Bejan's flow visualization of buoyancy-driven flow of a hydromagnetic Casson fluid from an isothermal wavy surface&rdquo;](https://doi.org/10.1063/5.0075898) [Phys. Fluids 33, 093113 (2021)], _Phys. Fluids_ **33** (2021) 129101.
-- E. Pucci, G. Saccomandi, R. Vitolo, [Bogus transformations in mechanics of continua](https://doi.org/10.1016/j.ijengsci.2015.10.009), _Int. J. Eng. Sci._ **99** (2016) 13&ndash;21.
-- G. Romano, [Comment on the paper &ldquo;Exact solution of Eringen's nonlocal integral model for bending of Euler&ndash;Bernoulli and Timoshenko beams&rdquo; by Meral Tuna &amp; Mesut Kirca](https://doi.org/10.1016/j.ijengsci.2016.09.009), _Int. J. Eng. Sci._ **109** (2016) 240&ndash;242.
-- G. Natarajan, M. Natarajan, [Critique on &ldquo;A revisit of Navier&ndash;Stokes equation&rdquo;](https://doi.org/10.1016/j.euromechflu.2020.08.002), _Eur. J. Mech. B/Fluids_ **85** (2021) 21&ndash;23.
-
-Why such errors persist, and why mathematics corrects them more slowly than other fields, is itself a subject: J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425.
-
 George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
 
 Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Truesdell wrote:
@@ -113,6 +104,15 @@ Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Trues
 > &mdash; C. Truesdell, review of G. Garc&iacute;a, _Equations of finite vibratory motions in isotropic elastic media_, _Actas Acad. Ci. Lima_ **13** (1950) 29&ndash;38, [MR0039515 (12,561a)](https://mathscinet.ams.org/mathscinet-getitem?mr=0039515)
 
 On Truesdell himself: J. M. Ball, R. D. James, [The scientific life and influence of Clifford Ambrose Truesdell III](https://doi.org/10.1007/s002050100178), _Arch. Rational Mech. Anal._ **161** (2002) 1&ndash;26. [Free copy](https://people.maths.ox.ac.uk/ball/Miscelleaneous%20Articles/truesdell.pdf)
+
+Nor is it confined to viscoelasticity, or to me. The same corrections are being written in neighboring fields, and could be reproduced in the same way as the notebooks here:
+
+- I. A. Frigaard, R. J. Poole, [Comment on &ldquo;Bejan's flow visualization of buoyancy-driven flow of a hydromagnetic Casson fluid from an isothermal wavy surface&rdquo;](https://doi.org/10.1063/5.0075898) [Phys. Fluids 33, 093113 (2021)], _Phys. Fluids_ **33** (2021) 129101.
+- E. Pucci, G. Saccomandi, R. Vitolo, [Bogus transformations in mechanics of continua](https://doi.org/10.1016/j.ijengsci.2015.10.009), _Int. J. Eng. Sci._ **99** (2016) 13&ndash;21.
+- G. Romano, [Comment on the paper &ldquo;Exact solution of Eringen's nonlocal integral model for bending of Euler&ndash;Bernoulli and Timoshenko beams&rdquo; by Meral Tuna &amp; Mesut Kirca](https://doi.org/10.1016/j.ijengsci.2016.09.009), _Int. J. Eng. Sci._ **109** (2016) 240&ndash;242.
+- G. Natarajan, M. Natarajan, [Critique on &ldquo;A revisit of Navier&ndash;Stokes equation&rdquo;](https://doi.org/10.1016/j.euromechflu.2020.08.002), _Eur. J. Mech. B/Fluids_ **85** (2021) 21&ndash;23.
+
+Why such errors persist, and why mathematics corrects them more slowly than other fields, is itself a subject: J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425.
 
 ## AI use
 
