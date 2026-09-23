@@ -55,7 +55,7 @@ python3 -m pip install -r requirements.txt     # or: conda env create -f environ
 jupyter lab notebooks/
 ```
 
-Each notebook runs top to bottom on a fresh kernel and regenerates every number and figure it shows, except the values read off Balan's published figures, which are listed in the cell that uses them and can be re-derived with the digitizers in [`tools/`](tools/); the notebooks themselves read no data files. On a laptop, each takes up to a couple of minutes. The notebooks are committed executed, so they can also be read on GitHub without running them, with a static plot in place of each interactive one. The regenerated paper figures are also in [`figures/`](figures/).
+Each notebook runs top to bottom on a fresh kernel and regenerates every number and figure it shows, except the values read off Balan's published figures, which are listed in the cell that uses them and can be re-derived with the digitizers in [`tools/`](tools/); the notebooks themselves read no data files. On a laptop, each takes up to a few minutes. The notebooks are committed executed, so they can also be read on GitHub without running them, with a static plot in place of each interactive one. The regenerated paper figures are also in [`figures/`](figures/).
 
 ⚠️ The notebooks are not meant to be robust: they may need updates on other platforms, or as the Python libraries evolve.
 
