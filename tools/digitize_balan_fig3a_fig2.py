@@ -128,6 +128,7 @@ open(OUT, 'w').write('\n'.join(
     ['quantity,xi,t,value',                          # the header first, for numpy.genfromtxt(names=True)
      '# Fig. 3(a) of Balan (2023), Phys. Fluids 35, 113108: Oldroyd-B (a = 1), kappa = 0.2, Re = 1',
      '# v and sigma at the distance xi from the moving plate, that is at x = 100 - xi in his coordinate;',
+     '# then v_newtonian from Fig. 2, where the column is his x itself, matched to a curve by value;',
      '# page 4 rendered at 600 dpi by pdftoppm, the velocity panel cropped to (736, 2400, 2481, 3560) and the',
      '# shear-stress panel to (2600, 2350, 4400, 3450), each calibrated on its own tick labels',
      '# a reading is kept only where its curve is unambiguous: of a known color, thin enough not to be two',
@@ -139,6 +140,7 @@ s = 600/110
 fig2 = np.asarray(page(3).crop((int(95*s), int(770*s), int(470*s), int(1030*s)))).astype(float)
 v_slope2, v_intercept2 = np.polyfit([55.5, 225.5, 394, 563, 732.5], [1.0, 0.8, 0.6, 0.4, 0.2], 1)
 x_slope2, x_intercept2 = np.polyfit([525, 791.5, 1058, 1325, 1592.5], [92, 94, 96, 98, 100.0], 1)
+fig2_rows = []
 print('\nFIG. 2 OF BALAN (2023), NEWTONIAN VELOCITY: nearest read value versus erfc and versus the ramped plate')
 print('     t   matched to erfc (within 0.006)   median|read - erfc|   median|read - ramp|')
 for t in [10, 8, 7, 5, 2, 1, 0.5, 0.2]:
@@ -153,5 +155,9 @@ for t in [10, 8, 7, 5, 2, 1, 0.5, 0.2]:
             continue
         to_step.append(np.abs(read - step).min())
         to_ramp.append(np.abs(read - exact(xi, t, 1.0, True)).min())
+        fig2_rows.append(f'v_newtonian,{x:g},{t:g},{read[np.argmin(np.abs(read - step))]:.4f}')
     to_step, to_ramp = np.array(to_step), np.array(to_ramp)
     print(f'  {t:4}   {(to_step < 0.006).sum():2d}/{len(to_step):2d}   {np.median(to_step):.4f}   {np.median(to_ramp):.4f}')
+
+open(OUT, 'a').write('\n'.join(fig2_rows) + '\n')
+print(f'appended {len(fig2_rows)} Fig. 2 readings to {OUT}')
