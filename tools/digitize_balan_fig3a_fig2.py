@@ -13,7 +13,7 @@ https://doi.org/10.1063/5.0173510 and pass its path:
 
     python3 tools/digitize_balan_fig3a_fig2.py path/to/Balan-Phys.Fluids.35.pdf
 
-Needs pdftoppm (poppler), Pillow, SciPy and mpmath.
+Needs pdftoppm (poppler), Pillow, SciPy and mpmath. Writes tools/balan_fig3a_digitized.csv.
 """
 import subprocess
 import sys
@@ -25,6 +25,7 @@ from scipy import ndimage
 from scipy.special import erfc
 
 PDF = sys.argv[1] if len(sys.argv) > 1 else 'Balan-Phys.Fluids.35.pdf'
+OUT = 'tools/balan_fig3a_digitized.csv'
 tmp = tempfile.mkdtemp()
 
 
@@ -84,6 +85,7 @@ for xi, t, v, ramp, step in rows:
 diff = np.array([[r[2] - r[3], r[2] - r[4]] for r in rows])
 print(f'  {len(rows)} values; max|read - ramp| = {np.abs(diff[:, 0]).max():.4f}, median {np.median(np.abs(diff[:, 0])):.4f}; '
       f'read - start-up from {diff[:, 1].min():.4f} to {diff[:, 1].max():.4f}')
+csv = [f'v,{xi:g},{t:g},{value:.4f}' for xi, t, value, ramp, step in rows]
 
 # ---------------------------------------------------------------- Fig. 3(a), shear-stress panel, page 4
 # the right half of the same figure, same six distances and the same colors; no annotation circle here
@@ -121,6 +123,16 @@ diff = np.array([[r[2] - r[3], r[2] - r[4]] for r in rows])
 print(f'  {len(rows)} values; max|read - ramp| = {np.abs(diff[:, 0]).max():.4f}, '
       f'median {np.median(np.abs(diff[:, 0])):.4f}; '
       f'|read - start-up| up to {np.abs(diff[:, 1]).max():.4f}')
+csv = csv + [f'sigma,{xi:g},{t:g},{value:.4f}' for xi, t, value, ramp, step in rows]
+open(OUT, 'w').write('\n'.join(
+    ['quantity,xi,t,value',                          # the header first, for numpy.genfromtxt(names=True)
+     '# Fig. 3(a) of Balan (2023), Phys. Fluids 35, 113108: Oldroyd-B (a = 1), kappa = 0.2, Re = 1',
+     '# v and sigma at the distance xi from the moving plate, that is at x = 100 - xi in his coordinate;',
+     '# page 4 rendered at 600 dpi by pdftoppm, the velocity panel cropped to (736, 2400, 2481, 3560) and the',
+     '# shear-stress panel to (2600, 2350, 4400, 3450), each calibrated on its own tick labels',
+     '# a reading is kept only where its curve is unambiguous: of a known color, thin enough not to be two',
+     '# merged curves, and clear of the annotation circle'] + csv) + '\n')
+print(f'wrote {OUT}')
 
 # ---------------------------------------------------------------- Fig. 2, Newtonian velocity inset, page 3
 s = 600/110
