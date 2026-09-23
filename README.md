@@ -40,7 +40,7 @@ What is lost has a clean physical meaning. For a fluid with a retardation timesc
 V_\mathrm{plate}(t) = V_0\left[f(t) - f(0)\,\mathrm{e}^{-t/t_r}\right]H(t).
 ```
 
-For a plate moved at constant velocity ($f \equiv 1$), the Laplace transform of the erroneous solution is the correct one divided by $1 + t_r s$. C. I. Christov and I found this ramped plate for Stokes' first problem of a second-grade fluid [[3]](#citing); each notebook shows the same for its own erroneous solution. For the oscillating plate, it answers the question P. M. Jordan and I left open in [[5]](#citing) (p. 330), of "what kind of boundary condition the wrong solution satisfies, or whether it has any physical meaning." A recent numerical study [[9]](#citing) solves that same ramped plate: its initial data set the shear stress to zero while the plate is already moving, losing the $\delta(t)$ in a method-of-lines code rather than in a transform.
+For a plate moved at constant velocity ($f \equiv 1$), the Laplace transform of the erroneous solution is the correct one divided by $1 + t_r s$. C. I. Christov and I realized the connection to this ramped plate for Stokes' first problem of a second-grade fluid [[3]](#citing); each notebook shows the same for its own erroneous solution. For the oscillating plate, it answers the question P. M. Jordan and I left open in [[5]](#citing) (p. 330), of "what kind of boundary condition the wrong solution satisfies, or whether it has any physical meaning." A recent numerical study [[9]](#citing) solves that same ramped plate: its initial data set the shear stress to zero while the plate is already moving, losing the $\delta(t)$ in a method-of-lines code rather than in a transform.
 
 Two consequences follow. For a Newtonian or Maxwell fluid ($t_r = 0$), or a plate started without a jump ($f(0) = 0$, such as $f = \sin(\omega t)$), the error disappears, **so reducing a solution to one of these limits does not validate it.** And since the two plates agree after a few $t_r$, the erroneous solution looks right at long times; the difference is in the start-up, which is what the problem is about.
 
@@ -96,6 +96,12 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 - I. C. Christov, [Comment on: &ldquo;Stokes' first problem for heated flat plate with Atangana&ndash;Baleanu fractional derivative&rdquo;](https://doi.org/10.1016/j.chaos.2021.110999) [Chaos Solitons Fractals 117 (2018) 68], _Chaos Solitons Fractals_ **147** (2021) 110999. It shows that a 2018 paper commits the mathematical mistake already identified and corrected in [[3]](#citing).
 
 George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
+
+Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Truesdell wrote:
+
+> This paper, whose intent is stated in its title, gives wrong solutions to trivial problems. The basic error, however, is not new: &hellip; the stress-strain relations used are those once proposed by St.-Venant &hellip;, whose incorrect confusion of coordinates in the deformed and undeformed states of the body was pointed out by Brill and Boussinesq &hellip;
+>
+> &mdash; C. Truesdell, review of G. Garc&iacute;a, _Equations of finite vibratory motions in isotropic elastic media_, _Actas Acad. Ci. Lima_ **13** (1950) 29&ndash;38, [MR0039515 (12,561a)](https://mathscinet.ams.org/mathscinet-getitem?mr=0039515)
 
 ## AI use
 
