@@ -78,10 +78,10 @@ Run the script with `ipython`, not `python`, because the notebooks use IPython "
 
 - **The erroneous solutions are marked so they cannot be mistaken for correct ones.** Each is bracketed by &#x26A0;&#xFE0F; banners and drawn as a vermillion dashed curve. It is transcribed from the original paper, with its page, and never fixed.
 - **Misprints in the Comments themselves are corrected in place, with a note** saying what was printed and why it is corrected.
-- **Every claim is checked twice**, against a numerical inversion of the Laplace transform ([de Hoog _et al._, 1982](https://doi.org/10.1137/0903022), via [mpmath](https://mpmath.org)) and against a finite-difference scheme, with convergence tables.
+- **Every claim is checked twice** ✅, against a numerical inversion of the Laplace transform ([de Hoog _et al._, 1982](https://doi.org/10.1137/0903022), via [mpmath](https://mpmath.org)) and against a finite-difference scheme, with convergence tables.
 - **Anything a notebook shows that its paper does not state** (the ramped-plate identifications) is marked "shown here".
 - **Each notebook keeps its paper's notation**, so the unit step function is $H(t)$ in some of them and $\theta(t)$ in others.
-- **Oldroyd-B and Jeffreys are used interchangeably**, here and in the notebooks: in these unidirectional flows the convective terms of the Oldroyd-B model drop out of the shear-stress equation, leaving the linear Jeffreys model. Only the Gordon&ndash;Schowalter slip parameter keeps the normal stresses coupled in.
+- **Oldroyd-B and Jeffreys are used interchangeably** ↔️, here and in the notebooks: in these unidirectional flows the convective terms of the Oldroyd-B model drop out of the shear-stress equation, leaving the linear Jeffreys model. Only the Gordon&ndash;Schowalter slip parameter keeps the normal stresses coupled in.
 
 ## Citing
 
