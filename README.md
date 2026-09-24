@@ -87,7 +87,9 @@ Run the script with `ipython`, not `python`, because the notebooks use IPython "
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22930189.svg)](https://doi.org/10.5281/zenodo.22930189)
 
-Please cite the Comment whose results you use; each notebook's REFERENCES cell has the entry. To cite the notebooks themselves, cite the Zenodo archive: I. C. Christov, _viscoelastic-startup: Verification and reproducibility of exact solutions for start-up flows of viscoelastic fluids_, Zenodo (2026), [doi:10.5281/zenodo.22930189](https://doi.org/10.5281/zenodo.22930189). That DOI always resolves to the newest release; each release also has its own DOI, for pinning the exact code you ran. `CITATION.cff` carries the metadata. The notebooks reproduce:
+To cite the notebooks themselves, cite the Zenodo archive, [doi:10.5281/zenodo.22930189](https://doi.org/10.5281/zenodo.22930189); each release also has its own DOI, which pins the exact code you ran.
+
+Please cite the Comment whose results you use. Each notebook's REFERENCES cell has the full entry. The notebooks reproduce:
 
 1. I. C. Christov, [On a difficulty in the formulation of initial and boundary conditions for eigenfunction expansion solutions for the start-up of fluid flow](https://doi.org/10.1016/j.mechrescom.2013.05.005), _Mech. Res. Commun._ **51** (2013) 86&ndash;92. [arXiv:1305.5999](https://arxiv.org/abs/1305.5999)
 2. C. I. Christov, P. M. Jordan, [Comment on &ldquo;Stokes' first problem for an Oldroyd-B fluid in a porous half space&rdquo;](https://doi.org/10.1063/1.3126503) [Phys. Fluids 17, 023101 (2005)], _Phys. Fluids_ **21** (2009) 069101.
