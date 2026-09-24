@@ -2,15 +2,15 @@
 
 ![Left: the posed plate velocity, a step, and the ramp 1 - exp(-t/t_r) that the erroneous solutions actually solve. Right: start-up of plane Couette flow of an Oldroyd-B fluid at three times, the correct profile in blue with arrows, the erroneous series vermillion dashed, lagging as if the plate were ramped](assets/cover.png)
 
-This is a GitHub repository for the verification of exact solutions for **start-up flows of viscoelastic fluids**, maintained by Prof. [Ivan C. Christov](https://christov.tmnt-lab.org). A plate, at rest for all $t < 0$, is suddenly set into motion at $t = 0^+$ and drags a [viscoelastic](https://en.wikipedia.org/wiki/Viscoelasticity) fluid (modeled by the second-grade, [Oldroyd-B](https://en.wikipedia.org/wiki/Oldroyd-B_model) or Gordon&ndash;Schowalter models, for example) along with it. Variants include [Stokes' first](https://en.wikipedia.org/wiki/Rayleigh_problem) and [second](https://en.wikipedia.org/wiki/Stokes_problem) problems on an unbounded domain, and the [start-up of plane Couette flow](https://en.wikipedia.org/wiki/Couette_flow#Startup) in a channel.
+This is a GitHub repository for the verification of exact solutions for **start-up flows of viscoelastic fluids**, maintained by Prof. [Ivan C. Christov](https://christov.tmnt-lab.org). A plate, at rest for all $t < 0$, is suddenly set into motion at $t = 0^+$ and drags a [viscoelastic](https://ewoldt.mechanical.illinois.edu/the-zoo/) fluid (modeled by the second-grade, [Oldroyd-B](https://doi.org/10.1016/j.jnnfm.2021.104668) or Gordon&ndash;Schowalter models, for example) along with it. Variants include [Stokes' first](https://en.wikipedia.org/wiki/Rayleigh_problem) and [second](https://en.wikipedia.org/wiki/Stokes_problem) problems on an unbounded domain, and the [start-up of plane Couette flow](https://en.wikipedia.org/wiki/Couette_flow#Startup) in a channel.
 
-Over the last two decades, many (sometimes) highly cited papers have presented "new exact solutions" to these classical problems that are incorrect. The mathematical error is elementary, and it is the same one each time. Together with C. I. Christov and P. M. Jordan, I have been correcting these papers 💪, one Comment at a time, in a project I loosely call _On Stokes' problems: a study in repetitive errors in the fluid mechanics literature_. This is the open-source GitHub version of the project.
+Many (sometimes) highly cited papers have presented "new exact solutions" to these classical problems that are incorrect. The mathematical error is elementary, and it is the same one each time. In one case the correction reaches past the papers and asks us to **rewrite the textbook**: expanding in eigenfunctions after "subtracting off" the steady state, the recipe taught for start-up problems, violates causality [[1]](#citing). 🤯 Together with C. I. Christov and P. M. Jordan, I have been correcting these papers 💪, one Comment at a time, for almost two decades. I call the project, loosely, _On Stokes' problems: a study in repetitive errors in the fluid mechanics literature_. This is the open-source GitHub version of the project.
 
-## Nullius in verba
+## Nullius in verba<sup>[*](https://royalsociety.org/about-us/who-we-are/history/)</sup>
 
 Although these Comments definitively settled the mathematics and solutions over a decade ago, the same errors continue to pop up and be promulgated. In this area of mechanics, everything is demonstrably true or false; there are no gray areas. So, rather than ask the reader to take my word for it, **each notebook in this repository reproduces one of those corrections from scratch**: the corrected solution, the erroneous published solution implemented exactly as printed, an independent check of both, and the paper's comparison figure(s), regenerated.
 
-🚀 Getting started: the notebooks are independent of each other; [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea. From there, the two [christov_2010_stokes1_*](notebooks/christov_2010_stokes1_second_grade.ipynb) notebooks collect the correct solutions against which all the erroneous ones are checked, while [jordan_2005_second_grade_couette](notebooks/jordan_2005_second_grade_couette.ipynb) and [christov_2013_oldroydb_couette](notebooks/christov_2013_oldroydb_couette.ipynb) show the same mistake reached by a different route: an eigenfunction expansion in a channel, rather than an integral transform in a half-space.
+🚀 Getting started: the notebooks are independent of each other, and [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea.
 
 | Notebook | Problem | Reproduces |
 |---|---|---|
@@ -24,8 +24,6 @@ Although these Comments definitively settled the mathematics and solutions over 
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichristov/viscoelastic-startup/blob/main/notebooks/christov_2011_jordan_2010_nonrwa.ipynb)<br>[christov_2011_jordan_2010_nonrwa](notebooks/christov_2011_jordan_2010_nonrwa.ipynb) | The Laplace transform of a suddenly moved plate's velocity; Stokes' first problem, second-grade fluid in a porous half-space | [[7, 8]](#citing) |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichristov/viscoelastic-startup/blob/main/notebooks/balan_2023_startup_couette.ipynb)<br>[balan_2023_startup_couette](notebooks/balan_2023_startup_couette.ipynb) | Start-up of plane Couette flow, Gordon&ndash;Schowalter fluid, Oldroyd-B and corotational (Jaumann) cases: initial data that are inconsistent with a retardation time, and the figure of a submitted Comment | [[9]](#citing) |
 
-Four notebooks depart from that pattern and say so at the top: the two Christov (2010) notebooks collect correct representations instead of correcting one paper; the Christov (2011) and Jordan (2010) notebook corrects a method rather than a formula, and neither of its papers has a figure, so its figure is new; and the Balan (2023) notebook has no erroneous formula to transcribe, the error there being in the initial conditions, so it imposes those as printed in a finite-difference solver and compares the result with values digitized from the paper's own figures.
-
 ## One mistake, many papers
 
 Let $V_\mathrm{plate}(t) \equiv v_x(0,t)$ be the velocity of the plate. For a plate at rest until it is suddenly set into motion at $t = 0^+$,
@@ -35,20 +33,22 @@ Let $V_\mathrm{plate}(t) \equiv v_x(0,t)$ be the velocity of the plate. For a pl
 V_\mathrm{plate}(t) = V_0 f(t)H(t),
 ```
 
-where $V_0$ is the plate's speed, $f$ the shape of its motion ($f \equiv 1$ for start-up, $\cos(\omega t)$ or $\sin(\omega t)$ for an oscillating plate), and $H$ the [Heaviside unit step function](https://en.wikipedia.org/wiki/Heaviside_step_function). In the sense of [distributions](https://en.wikipedia.org/wiki/Distribution_(mathematics)), the derivative of $V_\mathrm{plate}$ contains $V_0f(0)\delta(t)$. The [Dirac delta distribution](https://en.wikipedia.org/wiki/Dirac_delta_function), $\delta(t)$, has no point values; however, when it is the forcing term of an ODE in $t$, it contributes to the solution. (Prof. Arthur Mattuck's outstanding MIT 18.03 video lectures on [discontinuous inputs](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/resources/lecture-22-using-laplace-transform-to-solve-odes-with-discontinuous-inputs/) and [impulse inputs](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/resources/lecture-23-use-with-impulse-inputs/) explain this beautifully.) **Every erroneous solution reproduced here loses that $\delta(t)$**: it is treated as identically zero when the [Fourier sine transform](https://en.wikipedia.org/wiki/Sine_and_cosine_transforms) meets a mixed derivative, or it is hidden in an initial condition when the steady state is "subtracted off" before an [eigenfunction expansion](https://en.wikipedia.org/wiki/Sturm%E2%80%93Liouville_theory). The [Laplace transform](https://en.wikipedia.org/wiki/Laplace_transform) in time, applied to the problem as posed, cannot make this mistake.
+where $V_0$ is the plate's speed, $f$ the shape of its motion ($f \equiv 1$ for start-up, $\cos(\omega t)$ or $\sin(\omega t)$ for an oscillating plate), and $H$ the [Heaviside unit step function](https://en.wikipedia.org/wiki/Heaviside_step_function). In the sense of [distributions](https://en.wikipedia.org/wiki/Distribution_(mathematics)), the derivative of $V_\mathrm{plate}$ contains $V_0f(0)\delta(t)$. The [Dirac delta distribution](https://en.wikipedia.org/wiki/Dirac_delta_function), $\delta(t)$, has no point values ‼️; however, when it is the forcing term of an ODE in $t$, it contributes to the solution. (Prof. Arthur Mattuck's outstanding MIT 18.03 video lectures on [discontinuous inputs](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/resources/lecture-22-using-laplace-transform-to-solve-odes-with-discontinuous-inputs/) and [impulse inputs](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/resources/lecture-23-use-with-impulse-inputs/) explain this beautifully.)
 
-What is lost has a clean physical meaning. For a fluid with a retardation timescale $t_r$ ($\lambda_2$ for Oldroyd-B, $\alpha/\nu$ for second grade), the erroneous solution is the _exact_ solution for a different plate, one whose start-up jump is ramped on that timescale,
+**Every erroneous solution reproduced here loses that $\delta(t)$**: it is treated as identically zero when the [Fourier sine transform](https://en.wikipedia.org/wiki/Sine_and_cosine_transforms) meets a mixed derivative, or it is hidden in an initial condition when the steady state is "subtracted off" before an [eigenfunction expansion](https://en.wikipedia.org/wiki/Sturm%E2%80%93Liouville_theory). The [Laplace transform](https://en.wikipedia.org/wiki/Laplace_transform) in time, applied to the problem as posed, cannot make this mistake.
+
+What is lost has a clean physical meaning. For a fluid with a retardation timescale $t_r$ ($\lambda_2$ for Oldroyd-B, $\alpha/\nu$ for second grade), the erroneous solution is the _exact_ solution for a _different_ plate, one whose start-up jump is ramped on that timescale,
 **solved ramp-up:**
 
 ```math
 V_\mathrm{plate}(t) = V_0\left[f(t) - f(0)\,\mathrm{e}^{-t/t_r}\right]H(t).
 ```
 
-For a plate moved at constant velocity ($f \equiv 1$), the Laplace transform of the erroneous solution is the correct one divided by $1 + t_r s$. C. I. Christov and I realized the connection to this ramped plate for Stokes' first problem of a second-grade fluid [[3]](#citing); each notebook shows the same for its own erroneous solution. For the oscillating plate, it answers the question P. M. Jordan and I left open in [[5]](#citing) (p. 330), of "what kind of boundary condition the wrong solution satisfies, or whether it has any physical meaning." A recent numerical study [[9]](#citing) solves that same ramped plate: its initial data set the shear stress to zero while the plate is already moving, losing the $\delta(t)$ in a method-of-lines code rather than in a transform.
-
 🎲 No experiment ramps a plate on the fluid's own retardation time: $t_r$ is **a material property, not a setting on an apparatus**, so the ramp is an artifact of the error and not a boundary condition anyone would have chosen to impose.
 
-Two consequences follow. For a Newtonian or Maxwell fluid ($t_r = 0$), or a plate started without a jump ($f(0) = 0$, such as $f = \sin(\omega t)$), the error disappears, **so reducing a solution to one of these limits does not validate it.** And since the two plates agree after a few $t_r$, the erroneous solution looks right at long times; the difference is in the start-up, which is what the problem is about.
+[C. I. Christov](https://christov.metacontinuum.com/) and I realized the connection to this ramped plate for Stokes' first problem of a second-grade fluid [[3]](#citing); each notebook shows the same for its own erroneous solution. For the oscillating plate, it answers the question P. M. Jordan and I left open in [[5]](#citing), of "what kind of boundary condition the wrong solution satisfies, or whether it has any physical meaning."
+
+Two consequences follow. For a Newtonian or Maxwell fluid ($t_r = 0$), or a plate started without a jump ($f(0) = 0$, such as $f = \sin(\omega t)$), the error disappears, **so reducing a solution to one of these limits does not validate it.** And since the two plates agree after $t\sim$ a few $t_r$, the erroneous solution looks right at long times. The difference is in the start-up, which is what the problem is about.
 
 ## Running the notebooks
 
@@ -61,9 +61,9 @@ python3 -m pip install -r requirements.txt     # or: conda env create -f environ
 jupyter lab notebooks/
 ```
 
-Each notebook runs top to bottom on a fresh kernel and regenerates every number and figure it shows, except the values read off Balan's published figures, which are listed in the cell that uses them and can be re-derived with the digitizers in [`tools/`](tools/); the notebooks themselves read no data files. On a laptop, each takes up to a few minutes. The notebooks are committed executed, so they can also be read on GitHub without running them, with a static plot in place of each interactive one. The regenerated paper figures are also in [`figures/`](figures/).
+Each notebook runs top to bottom on a fresh kernel and regenerates every number and figure it shows, except the values read off Balan's published figures, which are listed in the cell that uses them and can be re-derived with the digitizers in [`tools/`](tools/); the notebooks themselves read no data files. On a laptop, each takes up to a few minutes. But the notebooks are likely not long-term robust: they may need updates on other platforms, or as the Python libraries evolve. ⚠️
 
-⚠️ The notebooks are not meant to be robust: they may need updates on other platforms, or as the Python libraries evolve.
+The notebooks are committed executed, so they can also be read on GitHub without running them, with a static plot in place of each interactive one. The regenerated paper figures are also in [`figures/`](figures/).
 
 💡 To run a notebook as a standalone Python script (stripping all the Markdown commentary), convert it:
 
@@ -78,7 +78,7 @@ Run the script with `ipython`, not `python`, because the notebooks use IPython "
 
 - **The erroneous solutions are marked so they cannot be mistaken for correct ones.** Each is bracketed by &#x26A0;&#xFE0F; banners and drawn as a vermillion dashed curve. It is transcribed from the original paper, with its page, and never fixed.
 - **Misprints in the Comments themselves are corrected in place, with a note** saying what was printed and why it is corrected.
-- **Every claim is checked twice** ✅, against a numerical inversion of the Laplace transform ([de Hoog _et al._, 1982](https://doi.org/10.1137/0903022), via [mpmath](https://mpmath.org)) and against a finite-difference scheme, with convergence tables.
+- **Every claim is checked twice** ✅, against a numerical inversion of the Laplace transform (via [mpmath](https://mpmath.org)) and against a finite-difference scheme, with convergence tables.
 - **Anything a notebook shows that its paper does not state** (the ramped-plate identifications) is marked "shown here".
 - **Each notebook keeps its paper's notation**, so the unit step function is $H(t)$ in some of them and $\theta(t)$ in others.
 - **Oldroyd-B and Jeffreys are used interchangeably** ↔️, here and in the notebooks: in these unidirectional flows the convective terms of the Oldroyd-B model drop out of the shear-stress equation, leaving the linear Jeffreys model. Only the Gordon&ndash;Schowalter slip parameter keeps the normal stresses coupled in.
@@ -95,7 +95,7 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 6. P. M. Jordan, [A note on start-up, plane Couette flow involving second-grade fluids](https://doi.org/10.1155/MPE.2005.539), _Math. Probl. Eng._ **2005** (2005) 539&ndash;545.
 7. I. C. Christov, [Comments on: &ldquo;Energetic balance for the Rayleigh&ndash;Stokes problem of an Oldroyd-B fluid&rdquo;](https://doi.org/10.1016/j.nonrwa.2011.06.025) [Nonlinear Anal. RWA 12 (2011) 1], _Nonlinear Anal. RWA_ **12** (2011) 3687&ndash;3690. [arXiv:1107.2947](https://arxiv.org/abs/1107.2947)
 8. P. M. Jordan, [Comments on: &ldquo;Exact solution of Stokes' first problem for heated generalized Burgers' fluid in a porous half-space&rdquo;](https://doi.org/10.1016/j.nonrwa.2009.01.010) [Nonlinear Anal. RWA 9 (2008) 1628], _Nonlinear Anal. RWA_ **11** (2010) 1198&ndash;1200.
-9. C. Balan, [Note on the start-up of Couette flow for viscoelastic fluids](https://doi.org/10.1063/5.0173510), _Phys. Fluids_ **35** (2023) 113108; the notebook reproduces its start-up computations and my submitted Comment on it.
+9. I. C. Christov, Comment on &ldquo;Note on the start-up of Couette flow for viscoelastic fluids&rdquo; [[Phys. Fluids 35, 113108 (2023)](https://doi.org/10.1063/5.0173510)], _Phys. Fluids_ (submitted).
 
 ## Repetitive errors, near and far
 
