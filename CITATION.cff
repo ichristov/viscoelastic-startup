@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "viscoelastic-startup: Verification and reproducibility of exact solutions for start-up flows of viscoelastic fluids"
+abstract: >-
+  Annotated Jupyter notebooks that reproduce, from scratch, published corrections to
+  erroneous "exact solutions" for start-up flows of viscoelastic fluids. Each notebook
+  states the initial-boundary-value problem, implements the erroneous published solution
+  exactly as printed, derives the correct solution, checks both independently against a
+  numerical Laplace inversion and a finite-difference solution, and regenerates the
+  comparison figure of the paper being corrected. The recurring error is the mishandling
+  of the impulsive start-up condition, which turns Stokes' first problem, or the start-up
+  of plane Couette flow, into the start-up of a plate ramped on the retardation timescale.
+type: software
+authors:
+  - family-names: Christov
+    given-names: Ivan C.
+    affiliation: "School of Mechanical Engineering, Purdue University, West Lafayette, Indiana 47907, USA"
+    email: christov@purdue.edu
+    website: "http://christov.tmnt-lab.org"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add before the Zenodo deposit
+repository-code: "https://github.com/ichristov/viscoelastic-startup"
+url: "https://github.com/ichristov/viscoelastic-startup"
+license: BSD-3-Clause
+# The BSD 3-Clause licence covers the code. The prose and figures in the notebooks are
+# released under CC-BY-4.0; see LICENSE and the README. CFF allows one licence field, so
+# the code licence is given here.
+keywords:
+  - viscoelasticity
+  - Oldroyd-B
+  - second-grade fluid
+  - Gordon-Schowalter
+  - Stokes' first problem
+  - start-up flow
+  - plane Couette flow
+  - Laplace transform
+  - reproducibility
+  - erratum
+# TODO before the Zenodo deposit: set both to the release actually archived.
+version: "1.0.0"
+date-released: "2026-09-23"

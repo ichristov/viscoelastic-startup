@@ -105,7 +105,7 @@ Please cite the Comment whose results you use; each notebook's REFERENCES cell h
 - I. C. Christov, [Comment on: &ldquo;Stokes' first problem for heated flat plate with Atangana&ndash;Baleanu fractional derivative&rdquo;](https://doi.org/10.1016/j.chaos.2021.110999) [Chaos Solitons Fractals 117 (2018) 68], _Chaos Solitons Fractals_ **147** (2021) 110999. It shows that a 2018 paper commits the mathematical mistake already identified and corrected in [[3]](#citing).
 - I. C. Christov, [Comment on &ldquo;Scattering Cancellation-Based Cloaking for the Maxwell&ndash;Cattaneo Heat Waves&rdquo;](https://doi.org/10.1103/PhysRevApplied.15.058001) [Phys. Rev. Applied 11, 044089 (2019)], _Phys. Rev. Applied_ **15** (2021) 058001. [arXiv:1908.02188](https://arxiv.org/abs/1908.02188)
 
-George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
+👉 George Santayana wrote that ["Those who cannot remember the past are condemned to repeat it"](https://en.wikiquote.org/wiki/George_Santayana), a line more often misattributed to Churchill than read. Indeed.
 
 Nor is the genre new. Reviewing a 1950 paper in _Mathematical Reviews_, C. Truesdell wrote:
 
@@ -124,11 +124,11 @@ On Truesdell himself: J. M. Ball, R. D. James, [The scientific life and influenc
 - N. A. Kudryashov, [Seven common errors in finding exact solutions of nonlinear differential equations](https://doi.org/10.1016/j.cnsns.2009.01.023), _Commun. Nonlinear Sci. Numer. Simul._ **14** (2009) 3507&ndash;3529, continued by R. O. Popovych, O. O. Vaneeva, [More common errors in finding exact solutions of nonlinear differential equations: Part I](https://doi.org/10.1016/j.cnsns.2010.01.037), _ibid._ **15** (2010) 3887&ndash;3899.
 - F. M. Fern&aacute;ndez has published dozens of such Comments, on methods as well as on solutions: [Comment on &ldquo;The asymptotic iteration method revisited&rdquo;](https://doi.org/10.1063/5.0008333), _J. Math. Phys._ **61** (2020) 064101, and [Comment on &ldquo;Semi-exact solutions of sextic potential plus a centrifugal term&rdquo;](https://doi.org/10.1007/s10910-023-01458-8), _J. Math. Chem._ **61** (2023) 893&ndash;895. Unpublished, but the best title of the genre: [Homotopy perturbation method: when infinity equals five](https://arxiv.org/abs/0810.3318) ([arXiv:0810.3318](https://arxiv.org/abs/0810.3318), 2008), on a heat-transfer paper whose infinity turns out to be five.
 
-Why such errors persist, and why mathematics corrects them more slowly than other fields, is itself a subject: J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425.
+🤔 Why such errors persist, and why mathematics corrects them more slowly than other fields, is itself a subject: J. F. Grcar, [Errors and corrections in mathematics literature](https://doi.org/10.1090/noti988), _Notices Amer. Math. Soc._ **60** (2013) 418&ndash;425.
 
 ## AI use
 
-This repository&mdash;the notebooks, their organization, this README and the supporting scripts&mdash;was designed and implemented with Claude (Anthropic) as a coding and calculus assistant, working throughout from I.C.C.'s Comments and his existing Matlab and Mathematica codes, under his direction. Every number and figure is regenerated and cross-checked inside the notebook that shows it, and all results were independently verified by I.C.C., who is responsible for the content.
+This repository&mdash;the notebooks, their organization, this README and the supporting scripts&mdash;was designed and implemented with Claude (Anthropic) as a coding and calculus assistant 🤖, working throughout from I.C.C.'s Comments and his existing Matlab and Mathematica codes, under his direction. Every number and figure is regenerated and cross-checked inside the notebook that shows it, and all results were independently verified by I.C.C., who is responsible for the content.
 
 ## Licenses
 
