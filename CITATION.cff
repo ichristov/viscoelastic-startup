@@ -17,13 +17,13 @@ authors:
     affiliation: "School of Mechanical Engineering, Purdue University, West Lafayette, Indiana 47907, USA"
     email: christov@purdue.edu
     website: "http://christov.tmnt-lab.org"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add before the Zenodo deposit
+    orcid: "https://orcid.org/0000-0001-8531-0531"
 repository-code: "https://github.com/ichristov/viscoelastic-startup"
 url: "https://github.com/ichristov/viscoelastic-startup"
 license: BSD-3-Clause
-# The BSD 3-Clause licence covers the code. The prose and figures in the notebooks are
-# released under CC-BY-4.0; see LICENSE and the README. CFF allows one licence field, so
-# the code licence is given here.
+# CFF allows one licence field, so the code licence is given here. The repository is
+# dual-licensed cell by cell: BSD-3-Clause for code, CC-BY-4.0 for text and figures.
+# See LICENSE, LICENSE-TEXT and the "Licenses" section of the README.
 keywords:
   - viscoelasticity
   - Oldroyd-B
