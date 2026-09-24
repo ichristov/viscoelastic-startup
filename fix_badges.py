@@ -64,14 +64,15 @@ def main():
         # Add badge
         data = json.loads(nb.read_text())
         url = f"https://colab.research.google.com/github/{user}/{repo}/blob/{branch}/{rel}"
-        badge = {
-            "cell_type": "markdown",
-            "metadata": {},
-            "source": [f"[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({url})\n"]
-        }
+        # keys in the order Jupyter writes them, so that a re-run is a true no-op:
+        # cell_type, id, metadata, source. Appending the id afterwards puts it last
+        # and rewrites every badge cell with a spurious diff.
+        badge = {"cell_type": "markdown"}
         # nbformat 4.5 and later require an id on every cell
         if data.get('nbformat_minor', 0) >= 5:
             badge['id'] = uuid.uuid4().hex[:8]
+        badge['metadata'] = {}
+        badge['source'] = [f"[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({url})\n"]
 
         cells = data.get('cells', [])
         if cells and 'colab-badge' in str(cells[0]):
