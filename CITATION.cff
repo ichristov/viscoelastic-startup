@@ -35,6 +35,6 @@ keywords:
   - Laplace transform
   - reproducibility
   - erratum
-# TODO before the Zenodo deposit: set both to the release actually archived.
+# Must match the GitHub release tag that Zenodo archives.
 version: "1.0.0"
-date-released: "2026-09-23"
+date-released: "2026-09-24"
