@@ -132,7 +132,7 @@ On Truesdell himself: J. M. Ball, R. D. James, [The scientific life and influenc
 
 ## AI use
 
-This repository&mdash;the notebooks, their organization, this README and the supporting scripts&mdash;was designed and implemented with Claude (Anthropic) as a coding and calculus assistant 🤖, working throughout from I.C.C.'s Comments and his existing Matlab and Mathematica codes, under his direction. Every number and figure is regenerated and cross-checked inside the notebook that shows it, and all results were independently verified by I.C.C., who is responsible for the content.
+This repository&mdash;the notebooks, their organization, this README and the supporting scripts&mdash;was designed and implemented with Claude (Anthropic) as a coding and calculation assistant 🤖, working throughout from I.C.C.'s Comments and his existing Matlab and Mathematica codes, under his direction. Every number and figure is regenerated and cross-checked inside the notebook that shows it, and all results were independently verified by I.C.C., who is responsible for the content.
 
 ## Licenses
 
