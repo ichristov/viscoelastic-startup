@@ -46,7 +46,7 @@ V_\mathrm{plate}(t) = V_0\left[f(t) - f(0)\,\mathrm{e}^{-t/t_r}\right]H(t).
 
 For a plate moved at constant velocity ($f \equiv 1$), the Laplace transform of the erroneous solution is the correct one divided by $1 + t_r s$. C. I. Christov and I realized the connection to this ramped plate for Stokes' first problem of a second-grade fluid [[3]](#citing); each notebook shows the same for its own erroneous solution. For the oscillating plate, it answers the question P. M. Jordan and I left open in [[5]](#citing) (p. 330), of "what kind of boundary condition the wrong solution satisfies, or whether it has any physical meaning." A recent numerical study [[9]](#citing) solves that same ramped plate: its initial data set the shear stress to zero while the plate is already moving, losing the $\delta(t)$ in a method-of-lines code rather than in a transform.
 
-🎲 No experiment ramps a plate on the fluid's own retardation time: $t_r$ is a material property, not a setting on an apparatus, so the ramp is an artifact of the error and not a boundary condition anyone would have chosen to impose.
+🎲 No experiment ramps a plate on the fluid's own retardation time: $t_r$ is **a material property, not a setting on an apparatus**, so the ramp is an artifact of the error and not a boundary condition anyone would have chosen to impose.
 
 Two consequences follow. For a Newtonian or Maxwell fluid ($t_r = 0$), or a plate started without a jump ($f(0) = 0$, such as $f = \sin(\omega t)$), the error disappears, **so reducing a solution to one of these limits does not validate it.** And since the two plates agree after a few $t_r$, the erroneous solution looks right at long times; the difference is in the start-up, which is what the problem is about.
 
@@ -76,7 +76,7 @@ Run the script with `ipython`, not `python`, because the notebooks use IPython "
 
 ## Reading a notebook
 
-- **The erroneous solutions are marked so they cannot be mistaken for correct ones.** Each is bracketed by &#x26A0;&#xFE0F; banners, implemented in a function named `wrong_<author>_<equation>`, and drawn as a vermillion dashed curve labeled "wrong:". It is transcribed from the original paper, with its page, and never fixed.
+- **The erroneous solutions are marked so they cannot be mistaken for correct ones.** Each is bracketed by &#x26A0;&#xFE0F; banners and drawn as a vermillion dashed curve. It is transcribed from the original paper, with its page, and never fixed.
 - **Misprints in the Comments themselves are corrected in place, with a note** saying what was printed and why it is corrected.
 - **Every claim is checked twice**, against a numerical inversion of the Laplace transform ([de Hoog _et al._, 1982](https://doi.org/10.1137/0903022), via [mpmath](https://mpmath.org)) and against a finite-difference scheme, with convergence tables.
 - **Anything a notebook shows that its paper does not state** (the ramped-plate identifications) is marked "shown here".
