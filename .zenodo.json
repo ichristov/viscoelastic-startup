@@ -1,0 +1,88 @@
+{
+  "title": "viscoelastic-startup: Verification and reproducibility of exact unidirectional solutions for start-up flows of viscoelastic fluids",
+  "description": "Annotated Jupyter notebooks that reproduce, from scratch, published corrections to erroneous \"exact solutions\" for start-up flows of viscoelastic fluids. Each notebook states the initial-boundary-value problem, implements the erroneous published solution exactly as printed, derives the correct solution, checks both independently against a numerical Laplace inversion and a finite-difference solution, and regenerates the comparison figure of the paper being corrected. The recurring error is the mishandling of the impulsive start-up condition, which turns Stokes' first problem, or the start-up of plane Couette flow, into the start-up of a plate ramped on the retardation timescale.",
+  "creators": [
+    {
+      "name": "Christov, Ivan C.",
+      "affiliation": "School of Mechanical Engineering, Purdue University, West Lafayette, Indiana 47907, USA",
+      "orcid": "0000-0001-8531-0531"
+    }
+  ],
+  "license": "bsd-3-clause",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "Couette flow",
+    "exact solutions",
+    "finite-difference schemes",
+    "fluid mechanics",
+    "Jupyter notebooks",
+    "Laplace transform",
+    "mathematical analysis",
+    "Maxwell fluid",
+    "non-Newtonian fluids",
+    "Oldroyd-B",
+    "polymeric fluids",
+    "relaxation time",
+    "reproducible research",
+    "retardation time",
+    "second-grade fluid",
+    "start-up flow",
+    "Stokes' first problem",
+    "strain rate",
+    "stress",
+    "viscoelasticity"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1063/1.3126503",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/j.mechrescom.2010.09.006",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1007/s00707-010-0300-2",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/j.nonrwa.2011.06.025",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/j.ijengsci.2011.10.012",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/j.mechrescom.2013.05.005",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1139/cjp-2015-0374",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1155/MPE.2005.539",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/j.nonrwa.2009.01.010",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "arXiv:TODO-REPLACE-WITH-BALAN-COMMENT-ARXIV-ID",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}

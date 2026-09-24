@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it using the metadata below."
-title: "viscoelastic-startup: Verification and reproducibility of exact solutions for start-up flows of viscoelastic fluids"
+title: "viscoelastic-startup: Verification and reproducibility of exact unidirectional solutions for start-up flows of viscoelastic fluids"
 abstract: >-
   Annotated Jupyter notebooks that reproduce, from scratch, published corrections to
   erroneous "exact solutions" for start-up flows of viscoelastic fluids. Each notebook
@@ -25,16 +25,26 @@ license: BSD-3-Clause
 # dual-licensed cell by cell: BSD-3-Clause for code, CC-BY-4.0 for text and figures.
 # See LICENSE, LICENSE-TEXT and the "Licenses" section of the README.
 keywords:
-  - viscoelasticity
-  - Oldroyd-B
-  - second-grade fluid
-  - Gordon-Schowalter
-  - Stokes' first problem
-  - start-up flow
-  - plane Couette flow
+  - Couette flow
+  - exact solutions
+  - finite-difference schemes
+  - fluid mechanics
+  - Jupyter notebooks
   - Laplace transform
-  - reproducibility
-  - erratum
+  - mathematical analysis
+  - Maxwell fluid
+  - non-Newtonian fluids
+  - Oldroyd-B
+  - polymeric fluids
+  - relaxation time
+  - reproducible research
+  - retardation time
+  - second-grade fluid
+  - start-up flow
+  - "Stokes' first problem"
+  - strain rate
+  - stress
+  - viscoelasticity
 # Must match the GitHub release tag that Zenodo archives.
 version: "1.0.0"
 date-released: "2026-09-24"
