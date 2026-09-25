@@ -78,11 +78,6 @@
       "identifier": "10.1016/j.nonrwa.2009.01.010",
       "relation": "isSupplementTo",
       "resource_type": "publication-article"
-    },
-    {
-      "identifier": "arXiv:TODO-REPLACE-WITH-BALAN-COMMENT-ARXIV-ID",
-      "relation": "isSupplementTo",
-      "resource_type": "publication-preprint"
     }
   ]
 }
