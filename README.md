@@ -12,7 +12,7 @@ Although these Comments definitively settled the mathematics and solutions over 
 
 🚀 Getting started: the notebooks are independent of each other, and [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea.
 
-| Problem | Reproduces | Corrects | Open |
+| Problem | Reproduces | Corrects | <div style="width: 100px;">Open</div> |
 |---|---|---|---|
 | Start-up of plane Couette flow, Oldroyd-B (Jeffreys) fluid: the textbook eigenfunction expansion versus the causal one | [[1]](#citing) | &mdash; | [![Open in nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/ichristov/viscoelastic-startup/blob/main/notebooks/christov_2013_oldroydb_couette.ipynb)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichristov/viscoelastic-startup/blob/main/notebooks/christov_2013_oldroydb_couette.ipynb) |
 | Stokes' first problem, Oldroyd-B fluid in a porous half-space | [[2]](#citing) | Tan & Masuoka (2005) | [![Open in nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/ichristov/viscoelastic-startup/blob/main/notebooks/christov_jordan_2009_oldroydb_porous.ipynb)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichristov/viscoelastic-startup/blob/main/notebooks/christov_jordan_2009_oldroydb_porous.ipynb) |
@@ -48,7 +48,7 @@ V_\mathrm{plate}(t) = V_0\left[f(t) - f(0)\,\mathrm{e}^{-t/t_r}\right]H(t).
 
 [C. I. Christov](https://christov.metacontinuum.com/) and I realized the connection to this ramped plate for Stokes' first problem of a second-grade fluid [[3]](#citing); each notebook shows the same for its own erroneous solution. For the oscillating plate, it answers the question P. M. Jordan and I left open in [[5]](#citing), of "what kind of boundary condition the wrong solution satisfies, or whether it has any physical meaning."
 
-Two consequences: (i) For a Newtonian or Maxwell fluid ($t_r = 0$), or a plate started without a jump &mdash; $f(0) = 0$, such as $f = \sin(\omega t)$ &mdash; the error disappears, **so reducing a solution to one of these limits does not validate it.** And (ii) since the two plates agree after $t\sim$ a few $t_r$, the erroneous solution looks right at long times. The difference is in the start-up, which is what the problem is about.
+Two consequences: (i) For a Newtonian or Maxwell fluid ($t_r = 0$), or a plate started without a jump ($f(0) = 0$, such as $f = \sin(\omega t)$), the error disappears, **so reducing a solution to one of these limits does not validate it.** And (ii) since the two plates agree after $t\sim$ a few $t_r$, the erroneous solution looks right at long times. The difference is in the start-up, which is what the problem is about.
 
 ## Running the notebooks
 
