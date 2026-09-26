@@ -6,9 +6,6 @@
 [![made with Jupyter](https://img.shields.io/badge/made%20with-Jupyter-F37626?logo=jupyter&logoColor=white)](https://github.com/ichristov/viscoelastic-startup/tree/main/notebooks)
 [![last commit](https://img.shields.io/github/last-commit/ichristov/viscoelastic-startup)](https://github.com/ichristov/viscoelastic-startup/commits/main)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichristov/viscoelastic-startup/)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ichristov/viscoelastic-startup/HEAD?labpath=notebooks)
-
 ![Left: the posed plate velocity, a step, and the ramp 1 - exp(-t/t_r) that the erroneous solutions actually solve. Right: start-up of plane Couette flow of an Oldroyd-B fluid at three times, the correct profile in blue with arrows, the erroneous series vermillion dashed, lagging as if the plate were ramped](assets/cover.png)
 
 This is a GitHub repository for the verification of exact solutions for **start-up flows of viscoelastic fluids**, maintained by Prof. [Ivan C. Christov](https://christov.tmnt-lab.org). A plate, at rest for all $t < 0$, is suddenly set into motion at $t = 0^+$ and drags a [viscoelastic](https://ewoldt.mechanical.illinois.edu/the-zoo/) fluid (modeled by the second-grade, [Oldroyd-B](https://doi.org/10.1016/j.jnnfm.2021.104668) or Gordon&ndash;Schowalter models, for example) along with it. Variants include [Stokes' first](https://en.wikipedia.org/wiki/Rayleigh_problem) and [second](https://en.wikipedia.org/wiki/Stokes_problem) problems on an unbounded domain, and the [start-up of plane Couette flow](https://en.wikipedia.org/wiki/Couette_flow#Startup) in a channel.
@@ -66,7 +63,9 @@ Two consequences: (i) For a Newtonian or Maxwell fluid ($t_r = 0$), or a plate s
 
 ## Running the notebooks
 
-Click a Colab badge, or run locally:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ichristov/viscoelastic-startup/HEAD?labpath=notebooks)
+
+Click a Colab badge in the table, launch the whole repository in Binder, or run locally:
 
 ```bash
 git clone https://github.com/ichristov/viscoelastic-startup
