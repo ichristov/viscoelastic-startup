@@ -1,5 +1,5 @@
 kappa,t,v
-# Fig. 4(a) of Balan (2023), Phys. Fluids 35, 113108: v(x* = 95, t), a = 1, Re = 1
+# Fig. 4(a) of Balan (2023), Phys. Fluids 35, 113108: v(x = 95, t), a = 1, Re = 1
 # page 5 rendered at 600 dpi by pdftoppm; each panel calibrated on its own tick labels:
 #   crop (520, 2080, 2700, 3340): v = -2.520157e-04*row + 0.281653 (max residual 1.3e-04), t = 5.055589e-03*col + -0.84324 (max residual 8.1e-03)
 #   crop (520, 3271, 2700, 4531): v = -2.571352e-04*row + 0.263911 (max residual 1.3e-04), t = 5.421502e-03*col + -0.91513 (max residual 7.1e-03)

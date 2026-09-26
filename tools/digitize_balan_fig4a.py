@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Digitize Fig. 4(a) of Balan (2023), Phys. Fluids 35, 113108: v(x* = 95, t) for a = 1, Re = 1.
+"""Digitize Fig. 4(a) of Balan (2023), Phys. Fluids 35, 113108: v(x = 95, t) for a = 1, Re = 1.
 
 Fig. 4(a) is three stacked panels sharing their axes. The first shows kappa = 1 (black, Newtonian) and
 kappa = 0.4 (red), the second kappa = 0.2 (red), the third kappa = 0.0001; only the first two are read
@@ -102,7 +102,7 @@ def main():
     page = Image.open(tmp + '/page-05.png').convert('RGB')
 
     lines = ['kappa,t,v',                                 # the header first, for numpy.genfromtxt(names=True)
-             '# Fig. 4(a) of Balan (2023), Phys. Fluids 35, 113108: v(x* = 95, t), a = 1, Re = 1',
+             '# Fig. 4(a) of Balan (2023), Phys. Fluids 35, 113108: v(x = 95, t), a = 1, Re = 1',
              '# page 5 rendered at 600 dpi by pdftoppm; each panel calibrated on its own tick labels:']
     rows = []
     for panel in PANELS:

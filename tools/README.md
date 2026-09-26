@@ -20,7 +20,7 @@ calibrate the axes on the centers of the tick labels, and read each curve as the
 narrow column, keeping only the columns where the curve is unambiguous: not crossed by an annotation, not merged
 with a neighboring curve, and of the right color.
 
-- `digitize_balan_fig4a.py` reads $v(x^\star = 95, t)$ from the first two panels of Fig. 4(a), that is
+- `digitize_balan_fig4a.py` reads $v(x = 95, t)$ from the first two panels of Fig. 4(a), that is
   $\kappa = 1$ and $0.4$ from the first and $\kappa = 0.2$ from the second, and writes
   [`balan_fig4a_digitized.csv`](balan_fig4a_digitized.csv). Each panel is calibrated separately, because the
   three panels of Fig. 4(a) were pasted at slightly different scales (2 per cent in $v$, 7 per cent in $t$).
