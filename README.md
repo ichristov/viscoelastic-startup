@@ -1,5 +1,14 @@
 # viscoelastic-startup
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22930189.svg)](https://doi.org/10.5281/zenodo.22930189)
+[![Code: BSD-3-Clause](https://img.shields.io/badge/code-BSD--3--Clause-blue.svg)](LICENSE)
+[![Text and figures: CC BY 4.0](https://img.shields.io/badge/text%20%26%20figures-CC--BY--4.0-lightgrey.svg)](LICENSE-TEXT)
+[![made with Jupyter](https://img.shields.io/badge/made%20with-Jupyter-F37626?logo=jupyter&logoColor=white)](https://github.com/ichristov/viscoelastic-startup/tree/main/notebooks)
+[![last commit](https://img.shields.io/github/last-commit/ichristov/viscoelastic-startup)](https://github.com/ichristov/viscoelastic-startup/commits/main)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ichristov/viscoelastic-startup/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ichristov/viscoelastic-startup/HEAD?labpath=notebooks)
+
 ![Left: the posed plate velocity, a step, and the ramp 1 - exp(-t/t_r) that the erroneous solutions actually solve. Right: start-up of plane Couette flow of an Oldroyd-B fluid at three times, the correct profile in blue with arrows, the erroneous series vermillion dashed, lagging as if the plate were ramped](assets/cover.png)
 
 This is a GitHub repository for the verification of exact solutions for **start-up flows of viscoelastic fluids**, maintained by Prof. [Ivan C. Christov](https://christov.tmnt-lab.org). A plate, at rest for all $t < 0$, is suddenly set into motion at $t = 0^+$ and drags a [viscoelastic](https://ewoldt.mechanical.illinois.edu/the-zoo/) fluid (modeled by the second-grade, [Oldroyd-B](https://doi.org/10.1016/j.jnnfm.2021.104668) or Gordon&ndash;Schowalter models, for example) along with it. Variants include [Stokes' first](https://en.wikipedia.org/wiki/Rayleigh_problem) and [second](https://en.wikipedia.org/wiki/Stokes_problem) problems on an unbounded domain, and the [start-up of plane Couette flow](https://en.wikipedia.org/wiki/Couette_flow#Startup) in a channel.
@@ -89,8 +98,6 @@ Run the script with `ipython`, not `python`, because the notebooks use IPython "
 - **Oldroyd-B and Jeffreys are used interchangeably** ↔️, here and in the notebooks: in these unidirectional flows the convective terms of the Oldroyd-B model drop out of the shear-stress equation, leaving the linear Jeffreys model. Only the Gordon&ndash;Schowalter slip parameter keeps the normal stresses coupled in.
 
 ## Citing
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22930189.svg)](https://doi.org/10.5281/zenodo.22930189)
 
 To cite the notebooks themselves, cite the Zenodo archive, [doi:10.5281/zenodo.22930189](https://doi.org/10.5281/zenodo.22930189); each release also has its own DOI, which pins the exact code you ran.
 

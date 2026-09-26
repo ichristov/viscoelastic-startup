@@ -16,10 +16,17 @@ authors:
     given-names: Ivan C.
     affiliation: "School of Mechanical Engineering, Purdue University, West Lafayette, Indiana 47907, USA"
     email: christov@purdue.edu
-    website: "http://christov.tmnt-lab.org"
+    website: "https://christov.tmnt-lab.org"
     orcid: "https://orcid.org/0000-0001-8531-0531"
 repository-code: "https://github.com/ichristov/viscoelastic-startup"
 url: "https://github.com/ichristov/viscoelastic-startup"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22930189"
+    description: "Concept DOI: always resolves to the latest release"
+  - type: doi
+    value: "10.5281/zenodo.22930190"
+    description: "Version DOI: the v1.0.0 release archived on Zenodo"
 license: BSD-3-Clause
 # CFF allows one licence field, so the code licence is given here. The repository is
 # dual-licensed cell by cell: BSD-3-Clause for code, CC-BY-4.0 for text and figures.
