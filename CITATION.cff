@@ -53,5 +53,5 @@ keywords:
   - stress
   - viscoelasticity
 # Must match the GitHub release tag that Zenodo archives.
-version: "1.0.0"
-date-released: "2026-09-24"
+version: "1.1.0"
+date-released: "2026-09-27"

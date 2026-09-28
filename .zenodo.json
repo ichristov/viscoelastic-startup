@@ -78,6 +78,11 @@
       "identifier": "10.1016/j.nonrwa.2009.01.010",
       "relation": "isSupplementTo",
       "resource_type": "publication-article"
+    },
+    {
+      "identifier": "arXiv:2609.30359",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
     }
   ]
 }
