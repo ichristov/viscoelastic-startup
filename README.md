@@ -113,7 +113,7 @@ Please cite the Comment whose results you use. Each notebook's REFERENCES cell h
 6. P. M. Jordan, [A note on start-up, plane Couette flow involving second-grade fluids](https://doi.org/10.1155/MPE.2005.539), _Math. Probl. Eng._ **2005** (2005) 539&ndash;545.
 7. I. C. Christov, [Comments on: &ldquo;Energetic balance for the Rayleigh&ndash;Stokes problem of an Oldroyd-B fluid&rdquo;](https://doi.org/10.1016/j.nonrwa.2011.06.025) [Nonlinear Anal. RWA 12 (2011) 1], _Nonlinear Anal. RWA_ **12** (2011) 3687&ndash;3690. [arXiv:1107.2947](https://arxiv.org/abs/1107.2947)
 8. P. M. Jordan, [Comments on: &ldquo;Exact solution of Stokes' first problem for heated generalized Burgers' fluid in a porous half-space&rdquo;](https://doi.org/10.1016/j.nonrwa.2009.01.010) [Nonlinear Anal. RWA 9 (2008) 1628], _Nonlinear Anal. RWA_ **11** (2010) 1198&ndash;1200.
-9. I. C. Christov, Comment on &ldquo;Note on the start-up of Couette flow for viscoelastic fluids&rdquo; [[Phys. Fluids 35, 113108 (2023)](https://doi.org/10.1063/5.0173510)], _Phys. Fluids_ (preprint, 2026). [arXiv:2609.30359](https://arxiv.org/abs/2609.30359)
+9. I. C. Christov, Comment on &ldquo;Note on the start-up of Couette flow for viscoelastic fluids&rdquo; [[Phys. Fluids 35, 113108 (2023)](https://doi.org/10.1063/5.0173510)] (preprint, 2026). [arXiv:2609.30359](https://arxiv.org/abs/2609.30359)
 
 ## Repetitive errors, near and far
 
