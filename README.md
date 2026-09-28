@@ -15,9 +15,15 @@ This is a GitHub repository for the verification of exact solutions for **start-
 
 Many (sometimes) highly cited papers have presented "new exact solutions" to these classical problems that are incorrect. The mathematical error is elementary and the same each time. In one case, the correction reaches past the papers and asks us to **rewrite the textbook**: expanding in eigenfunctions after "subtracting off" the steady state, the recipe taught for start-up problems, violates causality [[1]](#citing). 🤯 Together with C. I. Christov and P. M. Jordan, I have been correcting these papers 💪, one Comment at a time, for almost two decades. I call the project, loosely, _On Stokes' problems: a study in repetitive errors in the fluid mechanics literature_. This is the open-source GitHub version of the project.
 
-## Nullius in verba<sup>[*](https://royalsociety.org/about-us/who-we-are/history/)</sup>
+## Nullius in verba
 
 Although these Comments definitively settled the mathematics and solutions over a decade ago, the same errors continue to pop up and be promulgated. In this area of mechanics, everything is demonstrably true or false; there are no gray areas. So, rather than ask the reader to take my word for it, **each notebook in this repository reproduces one of those corrections from scratch**: the corrected solution, the erroneous published solution implemented exactly as printed, an independent check of both, and the paper's comparison figure(s), regenerated.
+
+The [Royal Society](https://royalsociety.org/about-us/who-we-are/history/)'s motto (_nullius in verba_) asks you not to take anyone's word for it. Feynman asked for more: not to take your own.
+
+> I'm talking about a specific, extra type of integrity that is not lying, but bending over backwards to show how you're maybe wrong, that you ought to do when acting as a scientist.
+>
+> &mdash; R. P. Feynman, [Cargo cult science](https://calteches.library.caltech.edu/51/2/CargoCult.htm), Caltech commencement address, _Engineering and Science_ **37**(7) (1974) 10&ndash;13
 
 🚀 Getting started: the notebooks are independent of each other, and [christov_christov_2010_second_grade](notebooks/christov_christov_2010_second_grade.ipynb) is the shortest route to the main idea.
 
