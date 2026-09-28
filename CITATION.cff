@@ -27,6 +27,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.22930190"
     description: "Version DOI: the v1.0.0 release archived on Zenodo"
+  - type: doi
+    value: "10.5281/zenodo.23005137"
+    description: "Version DOI: the v1.1.0 release archived on Zenodo"
 license: BSD-3-Clause
 # CFF allows one licence field, so the code licence is given here. The repository is
 # dual-licensed cell by cell: BSD-3-Clause for code, CC-BY-4.0 for text and figures.
