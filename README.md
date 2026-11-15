@@ -121,7 +121,7 @@ Please cite the Comment whose results you use. Each notebook's REFERENCES cell h
 7. I. C. Christov, [Comments on: &ldquo;Energetic balance for the Rayleigh&ndash;Stokes problem of an Oldroyd-B fluid&rdquo;](https://doi.org/10.1016/j.nonrwa.2011.06.025) [Nonlinear Anal. RWA 12 (2011) 1], _Nonlinear Anal. RWA_ **12** (2011) 3687&ndash;3690. [![arXiv:1107.2947](https://img.shields.io/badge/arXiv-1107.2947-b31b1b.svg)](https://arxiv.org/abs/1107.2947)
 8. P. M. Jordan, [Comments on: &ldquo;Exact solution of Stokes' first problem for heated generalized Burgers' fluid in a porous half-space&rdquo;](https://doi.org/10.1016/j.nonrwa.2009.01.010) [Nonlinear Anal. RWA 9 (2008) 1628], _Nonlinear Anal. RWA_ **11** (2010) 1198&ndash;1200.
 9. I. C. Christov, Comment on &ldquo;Note on the start-up of Couette flow for viscoelastic fluids&rdquo; [[Phys. Fluids 35, 113108 (2023)](https://doi.org/10.1063/5.0173510)] (preprint, 2026). [![arXiv:2609.30359](https://img.shields.io/badge/arXiv-2609.30359-b31b1b.svg)](https://arxiv.org/abs/2609.30359)
-10. I. C. Christov, [Comment on &ldquo;The velocity field due to an oscillating plate in an Oldroyd-B fluid&rdquo;](https://doi.org/10.1139/cjp-2015-0374) by C. C. Hopkins and J. R. de Bruyn [Can. J. Phys. 92, 533 (2014)], _Can. J. Phys._ **93** (2015) 1651&ndash;1652.
+10. I. C. Christov, [Comment on &ldquo;The velocity field due to an oscillating plate in an Oldroyd-B fluid&rdquo;](https://doi.org/10.1139/cjp-2015-0374) by C. C. Hopkins and J. R. de Bruyn [Can. J. Phys. 92, 533 (2014)], _Can. J. Phys._ **93** (2015) 1651&ndash;1652. [![arXiv:1506.01470](https://img.shields.io/badge/arXiv-1506.01470-b31b1b.svg)](https://arxiv.org/abs/1506.01470)
 
 ## Repetitive errors, near and far
 
